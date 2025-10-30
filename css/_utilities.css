@@ -1,0 +1,44 @@
+.texto-botao {
+  font-family: var(--fonte-principal);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.0;
+}
+
+.texto-footer-titulo {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.0;
+  color: var(--cor-texto-principal);
+}
+
+.texto-footer-paragrafo {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.texto-input {
+  font-family: var(--fonte-principal);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.texto-footer-subtitulo {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.0;
+}
+
+.texto-link-footer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.texto-selecionado {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.0;
+}
