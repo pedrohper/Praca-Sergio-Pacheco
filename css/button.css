@@ -1,0 +1,23 @@
+.btn { 
+    display: inline-block; 
+    width: 100%;
+    background: #16A249; 
+    color: #fff; 
+    padding: 10px 14px; 
+    border-radius: 8px; 
+    font-weight: 700; 
+}
+
+.btn:hover { 
+    filter: brightness(1.05); 
+}
+
+.btn.secundario { 
+    background: #e9ecff; 
+    color: #16A249; 
+}
+
+.btn.pequeno { 
+    padding: 8px 10px; 
+    font-size: 14px; 
+}

@@ -42,3 +42,20 @@
   font-weight: 500;
   line-height: 1.0;
 }
+
+.background-icon-start {
+    padding: 8px;
+    background-color: var(--cor-primaria-leve);
+    border-radius: 8px;
+}
+
+.container {
+       max-width: px;
+       margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 880px;
+    }
+}
