@@ -37,28 +37,34 @@ img {
     gap: 1rem;
 }
 
-.menu-fechado{ 
+.menu-fechado{
     display: flex;
     background-color: var(--cor-primaria-leve);
     padding: 4px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.menu-aberto{ 
+.menu-aberto{
     display: none;
-    background-color: var(--cor-primaria-leve);
+    background-color: var(--cor-primaria);
     padding: 4px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .mobile-nav {
-    display: flex;
+    display: none;
     padding: 1rem;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
+}
+
+.mobile-nav.active {
+    display: flex;
 }
 
 .mobile-nav img {
@@ -80,6 +86,26 @@ img {
     align-items: center;
     gap: 8px;
     flex-direction: row;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.item:hover {
+    background-color: rgba(22, 162, 73, 0.05);
+}
+
+.item.active {
+    background-color: var(--cor-primaria);
+}
+
+.item.active span {
+    color: white;
+}
+
+.item.active .background-icon {
+    background-color: white;
 }
 
 .item span {

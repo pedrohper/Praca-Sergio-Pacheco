@@ -1,116 +1,124 @@
-footer {
-  background-color: #21262C;
-  gap: 48px;
-  padding: 64px 16px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #FFFFFF;
-}
-
-footer h1,
-footer h2,
-footer h3,
-footer h4 {
+footer h2, p {
   color: white;
 }
 
-footer p {
+footer {
+  background-color: #21262C;
+  padding: 16px;
+  display: flex;
+}
+
+footer .container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.suggestion-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.suggestion-section h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.suggestion-section p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.suggestion-section .form-suggestion {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  color: #21262C;
+  border-radius: 8px;
+  background-color: #16A2491A;
+  border: 1px solid rgba(0, 93, 34, 0.1);
+  outline: none;
+}
+
+.suggestion-section .form-suggestion button {
+  height: 52px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-section .about-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.about-links h2 {
+  margin-bottom: 16px;
+}
+
+.about-links .item-link a {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.about-links .item-link:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.cc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
   color: #FAFAFA;
   font-weight: 400;
 }
 
-.footer-content {
-  display: flex;
-  gap: 48px;
+.cc p{
   width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  text-align: center;
+  color: #FAFAFA33;
+
 }
 
-.cc {
-  padding-top: 32px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+hr {
+  margin: 32px 0;
+  color: #FAFAFA33;
 }
 
-.sugestao,
-.footer-about,
-.info,
-.infos {
-  display: flex;
-  gap: 24px;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.logos {
-  display: flex;
-  gap: 16px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.links {
-  display: flex;
-  gap: 8px;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.link {
-  display: flex;
-  gap: 8px;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
-}
-
-@media (min-width: 768px) {
-
-  footer {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-
-  .footer-content {
+@media (min-width: 1024px) {
+  footer .container > div {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    align-items: flex-start;
   }
 
-  .sugestao,
-  .footer-about,
-  .info,
-  .infos {
-    width: auto;
-    flex-grow: 1;
-
-    flex-basis: 250px;
+  .suggestion-section,
+  .about-section {
+    width: 48%;
   }
 
-  .logos {
+  .about-section div {
     justify-content: flex-start;
-  }
-
-  .cc {
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
+    /* margin-bottom: 24px; */
   }
 }
