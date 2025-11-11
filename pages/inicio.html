@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praça Sérgio Pacheco</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/menu.js" defer></script>
 </head>
+
 <body>
-    <!-- <header>
+    <header>
         <div class="header-nav">
             <div class="logo-nav">
                 <img src="../assets/imgs/Logo_Uberlandia.png" alt="">
                 <img src="../assets/imgs/ADDEV 1.png" alt="">
             </div>
 
-            <div class="menu-fechado">
+            <div class="menu-fechado" id="menu-open-btn">
                 <img src="../assets/icons/Menu.png" alt="">
             </div>
-            
-            <div class="menu-aberto">
+
+            <div class="menu-aberto" id="menu-close-btn">
                 <img src="../assets/icons/close.svg" alt="">
             </div>
         </div>
 
-        <nav class="mobile-nav">
+        <nav class="mobile-nav" id="mobile-nav">
             <div class="item">
                 <div class="background-icon">
-                    <img src="../assets/icons/Home.svg" alt="">         
+                    <img src="../assets/icons/Home.svg" alt="">
                 </div>
                 <span>Início</span>
             </div>
@@ -35,6 +38,12 @@
                     <img src="../assets/icons/Reforma.svg" alt="">
                 </div>
                 <span>Reforma</span>
+            </div>
+            <div class="item">
+                <div class="background-icon">
+                    <img src="../assets/icons/Gym.svg" alt="">
+                </div>
+                <span>Academia</span>
             </div>
             <div class="item">
                 <div class="background-icon">
@@ -50,34 +59,37 @@
             </div>
             <div class="item">
                 <div class="background-icon">
-                    <img src="../assets/icons/Sobre.svg" alt="">  
+                    <img src="../assets/icons/Sobre.svg" alt="">
                 </div>
-                <span>Sobre a Praça</span>
+                <span>Sobre a praça</span>
             </div>
         </nav>
 
         <nav class="desktop-nav">
             <span>Início</span>
             <span>Reforma</span>
+            <span>Academia</span>
             <span>Xadrez</span>
             <span>Eventos</span>
-            <span>Sobre a Praça</span>
+            <span>Sobre a praça</span>
         </nav>
-    </header> -->
+    </header>
     <div class="banner">
         <h1>Conheça a Praça <br> Sérgio Pacheco</h1>
     </div>
+
+
+
     <div class="container">
-    
-    <div class="hero">
-        <div class="title-hero">
-            <h2>Acesso Rápido</h2>
-        </div>
-        
-        <div class="menu-hero">
+        <div class="hero">
+            <div class="title-hero">
+                <h2>Acesso Rápido</h2>
+            </div>
+
+            <div class="menu-hero">
                 <div class="item-hero">
                     <div class="background-icon-hero">
-                        <img src="../assets/icons/Home.svg" alt="">         
+                        <img src="../assets/icons/Home.svg" alt="">
                     </div>
                     <span>Início</span>
                 </div>
@@ -101,33 +113,47 @@
                 </div>
                 <div class="item-hero">
                     <div class="background-icon-hero">
-                        <img src="../assets/icons/Sobre.svg" alt="">  
+                        <img src="../assets/icons/Sobre.svg" alt="">
                     </div>
                     <span>Sobre a Praça</span>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer>
+    <!-- <footer>
             <div class="footer-content">
                 <div class="sugestao">
-                    <h1>Envie sua Sugestão</h1>
-                    <p>Sua opinião é fundamental para o sucesso do projeto. Envie suas sugestões, críticas ou ideias para tornar a nova Praça Sérgio Pacheco ainda melhor.</p>
-                    
-                    <button class="btn">
-                        Enviar
-                    </button>
+                    <h2>Envie sua Sugestão</h2>
+                    <p>Sua opinião é fundamental para o sucesso do projeto. Envie suas sugestões, críticas ou ideias
+                        para tornar a nova Praça Sérgio Pacheco ainda melhor.</p>
+                        
+                    <form id="suggestion-form" class="suggestion-form">
+                        <textarea   
+                            id="suggestion-text"
+                            name="suggestion"
+                            placeholder="Digite sua sugestão aqui..."
+                            rows="4"
+                            class="input"
+                            required
+                        ></textarea>
+                        <button type="submit" class="btn">
+                            Enviar
+                        </button>
+                    </form>
                 </div>
-                
+
                 <div class="footer-about">
                     <div class="logos">
                         <img src="../assets/imgs/Logo_Uberlandia.png" alt="">
                         <img src="../assets/imgs/footer ADDEV 1.png" alt="">
                     </div>
-                    
+
                     <div class="info">
                         <h2>Revitaliza Udi</h2>
-                        <p>Um projeto de revitalização urbana que utiliza metodologia de Design Thinking para transformar a Praça Sérgio de Freitas Pacheco em um espaço moderno, tecnológico e comunitário no coração de Uberlândia.</p>
+                        <p>Um projeto de revitalização urbana que utiliza metodologia de Design Thinking para
+                            transformar a Praça Sérgio de Freitas Pacheco em um espaço moderno, tecnológico e
+                            comunitário no coração de Uberlândia.</p>
                     </div>
 
                     <div class="infos">
@@ -136,20 +162,88 @@
                             <img src="../assets/icons/Pin.png" alt="">
                             <p>Praça Sérgio de Freitas Pacheco - Centro, Uberlândia/MG </p>
                         </div>
-                        
+
                         <div class="links">
                             <h3>Links Úteis</h3>
-                            <div class="link"><p>Portal da Transparência</p> <img src="../assets/icons/link-icon.svg" alt=""></div>
-                            <div class="link"><p>Prefeitura de Uberlândia</p> <img src="../assets/icons/link-icon.svg" alt=""></div>
+                            <div class="link">
+                                <p>Portal da Transparência</p> <img src="../assets/icons/link-icon.svg" alt="">
+                            </div>
+                            <div class="link">
+                                <p>Prefeitura de Uberlândia</p> <img src="../assets/icons/link-icon.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="cc">
                 <p>© 2024 Prefeitura Municipal de Uberlândia. Todos os direitos reservados.</p>
             </div>
-        </footer>
-    </div>
+        </footer> -->
+    <footer>
+        <div class="container">
+            <div>
+                <div class="suggestion-section">
+                    <h2>Envie sua sugestão</h2>
+                    <p>
+                        Sua opinião é fundamental para o sucesso do projeto.
+                        Envie suas sugestões, críticas ou ideias para tornar
+                        a nova Praça Sérgio Pacheco ainda melhor.
+                    </p>
+                    <form class="form-suggestion">
+                        <input type="text" class="input" placeholder="Seu nome" name="name" />
+                        <input type="text" class="input" placeholder="Seu email" name="email" />
+                        <input type="text" class="input" placeholder="Assunto" name="subject" />
+                        <textarea type="text" class="input" placeholder="Sua sugestão ou feedback"
+                            name="message"></textarea>
+                        <button type="submit" class="btn">Enviar sugestão</button>
+                    </form>
+                </div>
+                <div class="about-section">
+                    <div class="about-item">
+                        <img src="../assets/imgs/Logo_Uberlandia.png" alt="Logo Uberlândia" class="logo-uberlandia" />
+                        <img src="../assets/imgs/footer ADDEV 1.png" alt="Logo ADDEV" class="logo-addev" />
+                    </div>
+                    <div class="about-text">
+                        <h2>Revitaliza Udi</h2>
+                        <p>
+                            Revitaliza Udi é um projeto de revitalização urbana
+                            que utiliza metodologia de Design Thinking para
+                            transformar a Praça Sérgio de Freitas Pacheco em um
+                            espaço moderno, tecnológico e comunitário no coração
+                            de Uberlândia.
+                        </p>
+                    </div>
+
+                    <div class="about-info">
+                        <h2>Informações</h2>
+                        <div class="item">
+                            <img src="../assets/icons/pin.svg" alt="">
+                            <p>Praça Sérgio de Freitas Pacheco - Centro, Uberlândia/MG </p>
+                        </div>
+                    </div>
+
+                    <div class="about-links">
+                        <h2>Links Úteis</h2>
+                        <div class="item-link">
+                            <a target="_blank" href="https://www.uberlandia.mg.gov.br/portal-da-transparencia/">
+                                <p>Portal da Transparência</p> <img src="../assets/icons/link-icon.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="item-link">
+                            <a target="_blank" href="https://www.uberlandia.mg.gov.br/">
+                                <p>Prefeitura de Uberlândia</p> <img src="../assets/icons/link-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="cc">
+                <p>© 2024 Prefeitura Municipal de Uberlândia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
