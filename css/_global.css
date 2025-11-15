@@ -63,9 +63,9 @@ h4 {
 
 p {
     font-size: var(--tamanho-base);
-    color: var(--cor-texto-corpo);
+    color: #65758B;
     line-height: 1.4;
-    font-weight: regular;
+    font-weight: medium;
 }
 
 a {

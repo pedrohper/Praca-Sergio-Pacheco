@@ -44,19 +44,22 @@
 }
 
 .background-icon-start {
-    padding: 8px;
-    background-color: var(--cor-primaria-leve);
-    border-radius: 8px;
+  padding: 8px;
+  background-color: var(--cor-primaria-leve);
+  border-radius: 8px;
 }
 
 .container {
-       max-width: 100%;
-       margin: 0 auto;
-       padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 24px 16px;
+  gap: 16px;
 }
 
 @media (min-width: 768px) {
-    .container {
-        max-width: 880px;
-    }
+  .container {
+      max-width: 880px;
+  }
 }

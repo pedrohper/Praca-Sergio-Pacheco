@@ -105,6 +105,16 @@ hr {
   color: #FAFAFA33;
 }
 
+.logo-uberlandia {
+    height: 50px;
+    width: auto;  
+}
+
+.logo-addev {
+    height: 50px;
+    width: auto;
+}
+
 @media (min-width: 1024px) {
   footer .container > div {
     flex-direction: row;

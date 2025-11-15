@@ -4,9 +4,8 @@
     gap: 24px;
 }
 
-.title-hero {
-    border-bottom: 4px;
-    border-color: var(--cor-primaria-leve);
+.title {
+    border-bottom: 3px solid var(--cor-primaria-escura);
 }
 
 .item-hero {
