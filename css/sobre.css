@@ -53,18 +53,7 @@
     transition: all 0.3s ease;
 }
 
-.extras {
-    margin-top: 25px;
-    border-top: 1px solid #ccc;
-    padding-top: 15px;
-}
-
-.extras h3 {
-    color: var(--cor-primaria-escura);
-    margin-bottom: 6px;
-}
-
-.extras p {
-    font-size: 13px;
-    margin-bottom: 15px;
+.timeline-content:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
 }

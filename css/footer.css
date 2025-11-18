@@ -115,6 +115,10 @@ hr {
     width: auto;
 }
 
+footer .btn {
+  width: 100%;
+}
+
 @media (min-width: 1024px) {
   footer .container > div {
     flex-direction: row;
