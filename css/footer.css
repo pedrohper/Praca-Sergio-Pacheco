@@ -1,4 +1,4 @@
-footer h2, p {
+footer h2, footer p {
   color: white;
 }
 
@@ -6,18 +6,21 @@ footer {
   background-color: #21262C;
   padding: 16px;
   display: flex;
+  color: white;
 }
 
 footer .container > div {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  color: white;
 }
 
 .suggestion-section {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  color: white;
 }
 
 .suggestion-section h2 {
@@ -60,6 +63,7 @@ footer .container > div {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  color: white;
 }
 
 .about-section .about-item {
@@ -67,15 +71,18 @@ footer .container > div {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  color: white;
 }
 
 .about-links h2 {
   margin-bottom: 16px;
+  color: white;
 }
 
 .about-links .item-link a {
   display: flex;
   gap: 8px;
+  color: white;
   cursor: pointer;
 }
 
@@ -90,19 +97,19 @@ footer .container > div {
   justify-content: center;
   margin-top: 32px;
   color: #FAFAFA;
+  color: white;
   font-weight: 400;
 }
 
 .cc p{
   width: 100%;
   text-align: center;
-  color: #FAFAFA33;
-
+  color: white;
 }
 
 hr {
   margin: 32px 0;
-  color: #FAFAFA33;
+  color: white;
 }
 
 .logo-uberlandia {
@@ -133,6 +140,5 @@ footer .btn {
 
   .about-section div {
     justify-content: flex-start;
-    /* margin-bottom: 24px; */
   }
 }

@@ -1,21 +1,129 @@
+.eventos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    width: 100%;
+}
+
+.title-text{
+    width: 100%;
+}
+
+.past-events {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.past-events .status {
+    background-color: #424242;
+}
+
+.next-events {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #E0E0E0;
+    transition: all 0.3s ease;
+    flex: 1 0 328px;
+}
+
+.event-card:hover {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 2px 8px rgba(22, 162, 73, 0.15);
+}
+
 .event-info {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
+.title-event {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+
 .status {
     background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
     border-radius: 16px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-bottom: 4px;
     padding-top: 4px;
     width: 92px;
+    align-items: center;
 }
 
 .status p {
     color: white;
     font-weight: bold;
     text-align: center;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.create-event {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.create-event .btn {
+    width: 100%;
+}
+
+.card-create {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #E0E0E0;
+    transition: all 0.3s ease;
+    gap: 24px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 880px;
+  }
 }
