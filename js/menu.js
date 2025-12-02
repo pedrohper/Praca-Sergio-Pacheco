@@ -44,11 +44,35 @@ document.addEventListener('DOMContentLoaded', function() {
             const suggestion = textarea.value.trim();
 
             if (suggestion) {
-                // Here you would typically send the data to a server
-                // For now, we'll just show an alert and clear the form
                 alert('Obrigado pela sua sugestão! Ela foi enviada com sucesso.');
                 textarea.value = '';
             }
         });
     }
 });
+
+
+function configurarNavegacaoMobile() {
+    const caminhos = {
+        'inicio': '../index.html',
+        'reforma': './reforma.html',
+        'eventos': './eventos.html',
+        'sobre': './sobre.html'
+    };
+
+    const itensMenu = document.querySelectorAll('.mobile-nav .item[id]');
+
+    itensMenu.forEach(item => {
+        item.addEventListener('click', function() {
+            const idItem = this.id;
+            const caminhoDestino = caminhos[idItem];
+            if (caminhoDestino) {
+                window.location.href = caminhoDestino;
+            } else {
+                console.error(`Caminho não encontrado para o ID: ${idItem}`);
+            }
+        });
+    });
+}
+
+configurarNavegacaoMobile();
